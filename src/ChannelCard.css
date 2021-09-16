@@ -1,0 +1,28 @@
+.channelCard {
+    box-shadow: 1px 1px 10px #CACACA;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.channelCard__top {
+    display: flex;
+}
+
+.channelCard__img {
+    max-width: 72px;
+}
+
+.channelCard__title {
+    font-weight: 600;
+}
+
+.channelCard__rightSection {
+    margin-left: 1rem;
+}
+
+.channelCard__bottom {
+    margin-top: 1.5rem;
+}
+
+
+
