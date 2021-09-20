@@ -20,7 +20,7 @@ function App() {
     <div className="app">
       <div className="app__header">
         <h1 className="app__title">Channel List</h1>
-        <div class="app__form">
+        <div className="app__form">
           <input type="text" className="app__inputTitle" placeholder="Search Title" onChange={(e) => setSearchTitle(e.target.value)} />
         </div>
       </div>

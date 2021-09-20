@@ -1,0 +1,21 @@
+.channel {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+.channel__header {
+    display: flex;
+    margin-top: 20px;
+}
+
+.channel__img {
+    max-width: 72px;
+}
+
+.channel__rightSection {
+    margin-left: 1rem;
+}
+
+.channel__description {
+    margin-top: 1rem;
+}

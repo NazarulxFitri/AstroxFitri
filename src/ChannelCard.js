@@ -12,11 +12,9 @@ export default function ChannelCard({ channel }) {
             </div>
         </div>
         <div className="channelCard__bottom">
-            <p>On Now</p>
-            <p>N/A No Information Available</p>
-            <Link to={{ 
+            <Link className="channelCard__button" to={{ 
                 pathname: `/channel/${channel["id"]}`,
-                state: { channel: channel.id}
+                state: { channel_id: channel.id }
                 }}>View Detail</Link>
         </div>
     </div>;

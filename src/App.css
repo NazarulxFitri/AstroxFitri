@@ -38,3 +38,11 @@
   margin: 0 auto;
   width: 1080px;
 }
+
+@media (max-width: 992px) {
+  .app__channels {
+    grid-template-columns: auto;
+    width: 375px;
+    margin: 0 auto;
+  }
+}
