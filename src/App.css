@@ -1,39 +1,32 @@
-.app {
+/*
+Use CSS to do styling for app.js file.
+*/
 
-}
-
-.app__header {
+.app_header {
   background-image: linear-gradient(to right bottom, rgb(230, 0, 125), rgb(231, 38, 71));
-  color: #FFF;
+  color: #FFFFFF;
   padding: 10px 0 20px;
 }
 
-.app__form {
-  text-align: center;
-  justify-content: center;
-}
-
-.app__title {
-  margin-bottom: 10px;
+.app_title {
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-.app__searchForm {
-  display: flex;
-  justify-content: center;
+.app_form {
+  text-align: center;
 }
 
-.app__inputTitle , .app__inputNumber{
+.app_inputTitle {
   background-color: #F1F1F1;
   border: none;
   border-radius: 20px;
   font-size: 1rem;
-  padding: 10px;
+  padding: 0.75rem;
   width: 300px;
 }
 
-.app__channels {
-  border: 1px solid red;
+.app_channels {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,28 +38,39 @@
   padding: 1rem;
 }
 
-.channelCard__top {
+.channelCard_top {
   display: flex;
 }
 
-.channelCard__img {
+.channelCard_img {
   max-width: 72px;
 }
 
-.channelCard__title {
+.channelCard_title {
   font-weight: 600;
 }
 
-.channelCard__rightSection {
+.channelCard_rightSection {
   margin-left: 1rem;
 }
 
-.channelCard__bottom {
+.channelCard_bottom {
   margin-top: 1.5rem;
 }
 
-.channelCard__button {
-  text-decoration: none;
+.channelCard_button {
+  background-image: linear-gradient(to right bottom, #FFFFFF, #FFFFFF);
+  border: 1px solid rgb(230, 0, 125);
+  color: rgb(230, 0, 125);
+  padding: 4px 8px;
+  text-decoration: none; 
+}
+
+.channelCard_button:hover {
+  background-image: linear-gradient(to right bottom, rgb(230, 0, 125), rgb(231, 38, 71));
+  border-radius: 5px;
+  color: #FFFFFF;
+  transition: 0.25s;
 }
 
 @media (min-width: 768px) {
@@ -74,7 +78,7 @@
     width: 40%;
   }
 
-  .app__channels {
+  .app_channels {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -85,4 +89,6 @@
     width: 25%;
   }
 }
+
+
 

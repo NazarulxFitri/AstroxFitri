@@ -1,6 +1,8 @@
-.channel {
-    margin: 0 auto;
-    width: 1080px;
+.channel_page {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    max-width: 100%;
 }
 
 .channel__header {
@@ -28,6 +30,12 @@
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
+    overflow-x: scroll;
+    
+}
+
+.channel_detail::-webkit-scrollbar {
+    display: none;
 }
 
 .channel_scheduleList {
@@ -38,3 +46,10 @@
 .channel_time {
     margin-right: 10px;
 }
+
+
+@media (min-width: 768px) {
+    .channel_page {
+      
+    }
+  }

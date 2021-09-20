@@ -1,8 +1,12 @@
+/*
+Using React JS framework. Here , author fetch api data , prepare data , strip down nested object to get necessary data to be displayed. 
+useEffect , useState from react are imported and used in this file
+*/
 import React, { useEffect, useState } from 'react';
 import './ChannelDetail.css';
 
 const ChannelDetail = (props) => {
-
+    //Here variables are declared and using useState to set the value
     const [activeChannel, setActiveChannel] = useState([]);
     const [scheduleDate, setScheduleDate] = useState([]);
     const [scheduleList, setScheduleList] = useState([]);
@@ -23,13 +27,10 @@ const ChannelDetail = (props) => {
       fetchData()  
     });
 
-    console.log(scheduleList);
-
     const channel = activeChannel;
 
     return (
-
-        <div className="channel">
+        <div className="channel_page">
             <div className="channel__header">
                 <img className="channel__img" src={channel['imageUrl']} alt={channel["title"]} />
                 <div className="channel__rightSection">
