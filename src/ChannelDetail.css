@@ -19,3 +19,22 @@
 .channel__description {
     margin-top: 1rem;
 }
+
+.channel_date {
+    margin-right: 10px;
+}
+
+.channel_detail {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.channel_scheduleList {
+    display: flex;
+    flex-direction: row;
+}
+
+.channel_time {
+    margin-right: 10px;
+}

@@ -33,16 +33,58 @@
 }
 
 .app__channels {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 0 auto;
-  width: 1080px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media (max-width: 992px) {
+.channelCard {
+  box-shadow: 1px 1px 10px #CACACA;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.channelCard__top {
+  display: flex;
+}
+
+.channelCard__img {
+  max-width: 72px;
+}
+
+.channelCard__title {
+  font-weight: 600;
+}
+
+.channelCard__rightSection {
+  margin-left: 1rem;
+}
+
+.channelCard__bottom {
+  margin-top: 1.5rem;
+}
+
+.channelCard__button {
+  text-decoration: none;
+}
+
+
+
+@media (min-width: 768px) {
+  .channelCard {
+    width: 40%;
+  }
+
   .app__channels {
-    grid-template-columns: auto;
-    width: 375px;
-    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
+
+@media (min-width: 1024px) {
+  .channelCard {
+    width: 25%;
+  }
+}
+
