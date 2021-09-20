@@ -32,15 +32,12 @@ class ChannelDetail extends React.Component {
                 </div>
                 <p className="channel__description">{channel["description"]}</p>
                 <div className="channel__schedule">
-                    <table>
-                        <tr>
-                            {
-                                Object.keys(schedules).map((keyName) => (
-                                    <td>{keyName}</td>
-                                ))
-                            }
-                        </tr>
-                    </table>
+                    {
+                        Object.keys(schedules).map((keyName, index) => (
+
+                            <div key={keyName + index}>{keyName}</div>
+                        ))
+                    }
                 </div>
             </div>
         );
