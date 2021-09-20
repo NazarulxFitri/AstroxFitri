@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function ChannelCard({ channel }) {
     return <div className="channelCard">
         <div className="channelCard__top">
-            <img className="channelCard__img" src={channel["imageUrl"]} />
+            <img className="channelCard__img" src={channel["imageUrl"]} alt={channel["title"]}/>
             <div className="channelCard__rightSection">
                 <p className="channelCard__number">{channel["stbNumber"]}</p>
                 <p className="channelCard__title">{channel["title"]}</p>

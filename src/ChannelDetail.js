@@ -1,5 +1,4 @@
 import React from 'react';
-import Axios from 'axios';
 import './ChannelDetail.css';
 
 class ChannelDetail extends React.Component {
@@ -25,7 +24,7 @@ class ChannelDetail extends React.Component {
         return (
             <div className="channel">
                 <div className="channel__header">
-                    <img className="channel__img" src={channel['imageUrl']} />
+                    <img className="channel__img" src={channel['imageUrl']} alt={channel["title"]} />
                     <div className="channel__rightSection">
                         <p className="channelCard__number">{channel["stbNumber"]}</p>
                         <p className="channelCard__title">{channel["title"]}</p>

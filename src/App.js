@@ -27,7 +27,7 @@ function App() {
 
       <div className="app__channels">
         {channels.filter((channel) => {
-          if (searchTitle == "") {
+          if (searchTitle === "") {
             return channel
           } else if (channel["title"].toLowerCase().includes(searchTitle.toLowerCase())) {
             return channel
