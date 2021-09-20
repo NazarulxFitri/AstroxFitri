@@ -48,3 +48,9 @@
 .channel_time {
     margin-right: 10px;
 }
+
+.channel_back {
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #FFFFFF;
+}
