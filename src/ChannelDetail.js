@@ -31,16 +31,16 @@ const ChannelDetail = (props) => {
 
     return (
         <div className="channel_page">
-            <div className="channel__header">
-                <img className="channel__img" src={channel['imageUrl']} alt={channel["title"]} />
-                <div className="channel__rightSection">
-                    <p className="channelCard__number">{channel["stbNumber"]}</p>
-                    <p className="channelCard__title">{channel["title"]}</p>
+            <div className="channel_header">
+                <img className="channel_img" src={channel['imageUrl']} alt={channel["title"]} />
+                <div className="channel_rightSection">
+                    <p className="channelCard_number">{channel["stbNumber"]}</p>
+                    <p className="channelCard_title">{channel["title"]}</p>
                 </div>
             </div>
-            <p className="channel__description">{channel["description"]}</p>
+            <p className="channel_description">{channel["description"]}</p>
             <div className="channel_detail">
-                {
+                { 
                     scheduleDate.map((keyName, index) => {
                         let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                         let dateObject = new Date(keyName);
@@ -66,7 +66,6 @@ const ChannelDetail = (props) => {
                     <div className="channel_scheduleList" key={object.title + i}> 
                         <div className="channel_time">{object.datetime}</div>
                         <div>{object.title}</div>
-                        
                     </div>  
                 )
             })}</div>

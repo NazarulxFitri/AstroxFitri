@@ -1,24 +1,24 @@
 .channel_page {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    border: 1px solid red;
     max-width: 100%;
 }
 
-.channel__header {
+.channel_header {
     display: flex;
-    margin-top: 20px;
+    margin: 20px 0 0 20px;
 }
 
-.channel__img {
+.channel_img {
     max-width: 72px;
 }
 
-.channel__rightSection {
+.channel_rightSection {
     margin-left: 1rem;
 }
 
-.channel__description {
+.channel_description {
     margin-top: 1rem;
 }
 
@@ -50,6 +50,6 @@
 
 @media (min-width: 768px) {
     .channel_page {
-      
+
     }
   }
