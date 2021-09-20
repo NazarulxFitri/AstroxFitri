@@ -4,6 +4,7 @@ useEffect , useState from react are imported and used in this file
 */
 import React, { useEffect, useState } from 'react';
 import './ChannelDetail.css';
+import { Link } from 'react-router-dom';
 
 const ChannelDetail = (props) => {
     //Here variables are declared and using useState to set the value
@@ -37,6 +38,8 @@ const ChannelDetail = (props) => {
                     <p className="channelCard_number">{channel["stbNumber"]}</p>
                     <p className="channelCard_title">{channel["title"]}</p>
                 </div>
+                <Link className="channel_back" to={{ 
+                pathname: `/` }}>Go Back</Link>
             </div>
             <p className="channel_description">{channel["description"]}</p>
             <div className="channel_detail">
@@ -50,7 +53,7 @@ const ChannelDetail = (props) => {
                             <div key={keyName + index}>
                                 <div
                                     className="channel_date"
-                                    style={{ color: activeTab === index ? "red" : "blue" }}
+                                    style={{ color: activeTab === index ? "red" : "black" }}
                                     onClick={() => setActiveTab(index)}
                                 >{days}</div>
                             </div>
@@ -60,7 +63,7 @@ const ChannelDetail = (props) => {
                 }
 
             </div>
-            <div>{scheduleList[activeTab]?.map((object, i) => {
+            <div class="channel_list">{scheduleList[activeTab]?.map((object, i) => {
                 console.log("i k", object);
                 return (
                     <div className="channel_scheduleList" key={object.title + i}> 

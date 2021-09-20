@@ -1,13 +1,13 @@
 .channel_page {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .channel_header {
+    background-image: linear-gradient(to right bottom, rgb(230, 0, 125), rgb(231, 38, 71));
+    padding: 20px;
+    color: #FFFFFF;
     display: flex;
-    margin: 20px 0 0 20px;
 }
 
 .channel_img {
@@ -19,19 +19,21 @@
 }
 
 .channel_description {
-    margin-top: 1rem;
+    margin: 20px 20px;
 }
 
 .channel_date {
     margin-right: 10px;
 }
 
+.channel_detail , .channel_list {
+    margin: 0 20px;
+}
+
 .channel_detail {
-    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
-    
+    overflow-x: scroll;   
 }
 
 .channel_detail::-webkit-scrollbar {
@@ -46,10 +48,3 @@
 .channel_time {
     margin-right: 10px;
 }
-
-
-@media (min-width: 768px) {
-    .channel_page {
-
-    }
-  }
