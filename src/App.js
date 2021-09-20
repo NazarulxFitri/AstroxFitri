@@ -1,6 +1,6 @@
 import './App.css';
 import Axios from 'axios';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ChannelCard from './ChannelCard';
 
 function App() {
@@ -14,7 +14,9 @@ function App() {
     setChannels(result.data.response);
   }
 
-  getChannels();
+  useEffect(() => {
+    getChannels();
+  });
 
   return (
     <div className="app">
@@ -32,8 +34,9 @@ function App() {
           } else if (channel["title"].toLowerCase().includes(searchTitle.toLowerCase())) {
             return channel
           }
+          return false;
         }).map(channel => {
-          return <ChannelCard channel={channel} />;
+          return <ChannelCard key={channel["title"] + 'card'} channel={channel} />;
         })}
       </div>
     </div>
